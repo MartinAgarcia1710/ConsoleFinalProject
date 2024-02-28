@@ -1,7 +1,22 @@
 class Person:
-    def __init__(self, firstName, lastName, id, phoneNumber, email):
-        self.firstName = firstName
-        self.lastName = lastName
-        self.id = id
-        self.phoneNumber = phoneNumber
-        self.email = email
+    firstName = ""
+    lastName = ""
+    id = ""
+    phoneNumber = ""
+    email = ""
+    status = True
+
+    def newPerson(self):
+        self.firstName = input("Enter first name:\n")
+        self.lastName = input("Enter last name:\n")
+        self.id = input("Enter ID:\n")
+        while True:
+            try:
+                self.phoneNumber = input("Enter phone number\n")
+                break
+            except ValueError:
+                print("only numbers")
+        self.email = input("Enter e-mail")
+
+
+

@@ -2,7 +2,7 @@ import optionFunctions
 from Student import *
 from SubMenu import *
 from optionFunctions import *
-re = Student("Martin", "Garcia", 34568, 789456, "seg@egs.sdgf", "5675")
+
 
 while True:
     print("\t\tEAST GREAT FALLS SCHOOL\n")
